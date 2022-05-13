@@ -17,17 +17,16 @@ let winState = [
 	[0, 4, 8],
 	[2, 4, 6],
 ];
-function turn (){
-	player.innerHTML= `${playerTimer}`
-if (playerTimer==0) {
-	player.style.color= "red"
-} else {
-	player.style.color = "blue";
+function turn() {
+	player.innerHTML = `${playerTimer + 1}`;
+	if (playerTimer == 0) {
+		player.style.color = "red";
+	} else {
+		player.style.color = "blue";
+	}
 }
-}
-turn()
+turn();
 function handleMove(position) {
-	turn();
 	if (gameOver) {
 		return;
 	}
@@ -40,12 +39,12 @@ function handleMove(position) {
 			board[position] = symbols[playerTimer];
 
 			if (playerTimer == 0) {
-				playerTimer =( playerTimer == 0 )? 1 : 0;
+				playerTimer = playerTimer == 0 ? 1 : 0;
 				playerTimer = 1;
-			
+				turn();
 			} else {
 				playerTimer = 0;
-			
+				turn();
 			}
 		}
 	}
@@ -60,18 +59,18 @@ function isWin() {
 		let pos1 = seq[0];
 		let pos2 = seq[1];
 		let pos3 = seq[2];
-	
+
 		if (
 			board[pos1] == board[pos2] &&
 			board[pos1] == board[pos3] &&
-			board[pos1] != ''
+			board[pos1] != ""
 		) {
 			return true;
 		}
 	}
 	return false;
 }
-let reset2 = ()=>{ board = ["", "", "", "", "", "", "", "", ""];
-gameOver = false;
-}
-
+let reset2 = () => {
+	board = ["", "", "", "", "", "", "", "", ""];
+	gameOver = false;
+};
