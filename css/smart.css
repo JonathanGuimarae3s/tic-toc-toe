@@ -26,6 +26,7 @@
 		background-color: var(--color1);
 		color: #ed882d;
 		font-size: medium;
+		width: 57%;
 	}
 	/* quadrados */
 	.square {
