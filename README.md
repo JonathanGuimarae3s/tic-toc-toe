@@ -5,10 +5,10 @@
 <a href="https://jonathanguimarae3s.github.io/tic-toc-toe/" target="_blank">👉 Acesse a página aqui 👈</a>
 </p>    
 <hr>
-<!-- <div align="center">
-<img width="500px" src="https://github.com/JonathanGuimarae3s/portifolioo/blob/main/css/imgs/gifs/1.gif">
-<img width="500px" src="https://github.com/JonathanGuimarae3s/portifolioo/blob/main/css/imgs/gifs/2.gif">
-</div> -->
+ <div align="center">
+<img width="500px" src="https://github.com/JonathanGuimarae3s/tic-toc-toe/blob/main/css/imgs/1.gif">
+<img width="500px" src="https://github.com/JonathanGuimarae3s/tic-toc-toe/blob/main/css/imgs/2.gif">
+</div> 
 
 
 ## 💻 Projeto
