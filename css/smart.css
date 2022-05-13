@@ -4,14 +4,17 @@
 	--color3: #ed882d;
 	--shadow: 3px 5px 20px #000000b3;
 }
-@media screen and (max-width: 425px) {
+
+
+@media screen and (max-width: 480px) {
 	body {
 		background-color: var(--color3);
-        
+        width: 100%;
 	}
 	header {
 		background-color: var(--color1);
         margin: auto;
+	
         
 	}
    
@@ -41,7 +44,9 @@
 	footer {
 		background: var(--color1);
 		color: #ed882d;
-		width: 414px;
+	
+		margin: auto;
+		width: max-content;
 
 	}
 	a {
