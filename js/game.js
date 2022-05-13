@@ -69,6 +69,7 @@ function isWin() {
 		}
 	}
 	return false;
+	
 }
 let reset2 = () => {
 	board = ["", "", "", "", "", "", "", "", ""];
